@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
+    String setTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,13 @@ public class MainActivity3 extends AppCompatActivity {
         String text = intent.getStringExtra(MainActivity2.EXTRA_TEXT);
 
         TextView message= findViewById(R.id.txtMsg);
-        message.setText("Welcome, " + text);
+
+        for (int x = 0; x<3; x++){
+            setTxt = "hi";
+        }
+
+        message.setText(setTxt + " Welcome, " + text +"/n");
+
+
     }
 }
